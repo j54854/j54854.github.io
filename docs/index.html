@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Page Label</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-F61610L9G9"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+        
+            gtag('config', 'G-F61610L9G9');
+        </script>
+    </head>
+
+    <body class="">
+        <div id="nav_bar">{% block nav_bar %}{% endblock %}</div>
+
+        <div id="header">
+            <div class="jumbotron jumbotron-fluid" style="background-image: url('images/top_image.jpg');"> <!-- 1000x400 -->
+                <div class="container">
+                    <h1 class="display-4">Page Title</h1>
+                    <p class="lead">Introduction to this page</p>
+                </div>
+            </div>        
+        </div>
+
+        <div id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <nav class="my-2">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="url">
+                                        label
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item active">
+                                    label
+                                </li>
+                            </ol>
+                        </nav>
+                        <div class="rich-text my-4 mx-1">
+                            ここに書きたいことを書く．
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card my-4">
+                            <h4 class="card-header">
+                                card header
+                            </h4>
+                            <div class="card-body">
+                                <img alt="" class="img-fluid rounded-circle d-block mx-auto" height="200" src="images/side_image.jpg" width="200">
+                            </div>
+                            <div class="card-body">
+                                <div class="rich-text">
+                                    text
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rich-text">
+                            <p>
+                                <a class="btn btn-primary btn-block" href="https://hajimizu.net/mizulab/members/how_to_join/" role="button">How to Join Us</a>
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+
+        <div id="footer">
+            <nav class="navbar navbar-dark bg-dark fixed-bottom">
+                <span class="navbar-text mx-auto py-0">
+                    © 2023 hajiMIZU
+                </span>
+            </nav>        
+        </div>
+    
+        <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+        <script
+        src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+        crossorigin></script>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+        <script type="text/javascript" src="js/navbar.min.js"></script>
+
+        <script>
+            const nav_props = {
+                color: "dark",
+                variant: "dark",
+                brandlabel: "mizuLab",
+                brandhref: "http://hajimizu.net/",
+                navs: [
+                        {
+                            label: "test", 
+                            href: "http://hajimizu.net/"
+                        },
+                ],
+            };
+    
+            ReactDOM.render(
+                React.createElement(MyNavbar, nav_props),
+                document.getElementById('nav_bar')
+                );
+        </script>
+    </body>
+</html>
