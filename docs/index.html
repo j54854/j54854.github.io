@@ -20,13 +20,12 @@
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-        
             gtag('config', 'G-F61610L9G9');
         </script>
     </head>
 
     <body class="">
-        <div id="nav_bar">{% block nav_bar %}{% endblock %}</div>
+        <div id="nav_bar"><!-- set by react --></div>
 
         <div id="header">
             <div class="jumbotron jumbotron-fluid" style="background-image: url('images/top_image.jpg');"> <!-- 1000x400 -->
@@ -104,17 +103,16 @@
                 brandlabel: "mizuLab",
                 brandhref: "http://hajimizu.net/",
                 navs: [
-                        {
-                            label: "test", 
-                            href: "http://hajimizu.net/"
-                        },
+                    {
+                        label: "test", 
+                        href: "http://hajimizu.net/"
+                    },
                 ],
             };
-    
             ReactDOM.render(
                 React.createElement(MyNavbar, nav_props),
                 document.getElementById('nav_bar')
-                );
+            );
         </script>
     </body>
 </html>
