@@ -27,8 +27,8 @@ var navitems = {
   color: "dark",
   variant: "dark",
   brandlabel: "mizuLab",
-  brandhref: "https://j54854.github.io/",
-  navs: [{ label: "Top", href: "https://j54854.github.io/" }, { label: "Members", href: "https://j54854.github.io/member.html" }, { label: "Research", href: "https://j54854.github.io/research.html" }, { label: "Lectures", href: "https://j54854.github.io/lectures.html" }, { label: "Theses", href: "https://j54854.github.io/theses.html" }, { label: "Publications", href: "https://j54854.github.io/pubulications.html" }]
+  brandhref: "https://www.hajimizu.net/",
+  navs: [{ label: "Top", href: "https://www.hajimizu.net/" }, { label: "Members", href: "https://www.hajimizu.net/members.html" }, { label: "Research", href: "https://www.hajimizu.net/research.html" }, { label: "Lectures", href: "https://www.hajimizu.net/lectures.html" }, { label: "Theses", href: "https://www.hajimizu.net/theses.html" }, { label: "Publications", href: "https://www.hajimizu.net/pubulications.html" }]
 };
 
 function MyNavbar(props) {
@@ -167,7 +167,7 @@ function MySidebar() {
         null,
         React.createElement(
           "a",
-          { "class": "btn btn-primary btn-block", href: "https://j54854.github.io/join.html", role: "button" },
+          { "class": "btn btn-primary btn-block", href: "https://www.hajimizu.net/join.html", role: "button" },
           "How to Join Us"
         )
       )
