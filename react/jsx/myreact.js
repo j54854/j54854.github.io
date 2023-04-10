@@ -24,7 +24,7 @@ const navitems = {
     {label: "Research", href: "https://www.hajimizu.net/research.html"},
     {label: "Lectures", href: "https://www.hajimizu.net/lectures.html"},
     {label: "Theses", href: "https://www.hajimizu.net/theses.html"},
-    {label: "Publications", href: "https://www.hajimizu.net/pubulications.html"},
+    {label: "Publications", href: "https://www.hajimizu.net/publications.html"},
   ],
 };
 
