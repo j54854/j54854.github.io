@@ -28,7 +28,7 @@ var navitems = {
   variant: "dark",
   brandlabel: "mizuLab",
   brandhref: "https://www.hajimizu.net/",
-  navs: [{ label: "Top", href: "https://www.hajimizu.net/" }, { label: "Members", href: "https://www.hajimizu.net/member.html" }, { label: "Research", href: "https://www.hajimizu.net/research.html" }, { label: "Lectures", href: "https://www.hajimizu.net/lectures.html" }, { label: "Theses", href: "https://www.hajimizu.net/theses.html" }, { label: "Publications", href: "https://www.hajimizu.net/pubulications.html" }]
+  navs: [{ label: "Top", href: "https://www.hajimizu.net/" }, { label: "Members", href: "https://www.hajimizu.net/members.html" }, { label: "Research", href: "https://www.hajimizu.net/research.html" }, { label: "Lectures", href: "https://www.hajimizu.net/lectures.html" }, { label: "Theses", href: "https://www.hajimizu.net/theses.html" }, { label: "Publications", href: "https://www.hajimizu.net/pubulications.html" }]
 };
 
 function MyNavbar(props) {
